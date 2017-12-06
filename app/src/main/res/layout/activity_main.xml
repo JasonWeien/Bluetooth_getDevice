@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="lafaya.bluetooth_getdevice.MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="on"/>
+
+    <Button
+        android:id="@+id/button_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="visible"
+        android:text="可见的" />
+
+    <Button
+        android:id="@+id/button_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="list"
+        android:text="清单" />
+
+    <Button
+        android:id="@+id/button_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="off"/>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:visibility="visible" >
+    </ListView>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

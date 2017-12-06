@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bluetooth_getDevice</string>
+    <string name="bu_on">打开</string>
+    <string name="bu_off">关闭</string>
+</resources>
